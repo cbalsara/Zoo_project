@@ -41,6 +41,12 @@ public class LionTest {
         assertEquals( 20, lion.hasAge() );
     }
 
+    @Test
+    public void testingIfFed(){
+        assertEquals( true, lion.hasBeenFed() );
+    }
+
+
 
 
 
