@@ -28,6 +28,10 @@ public class Lion extends Feline {
         return this.age;
     }
 
+    public boolean hasBeenFed(){
+        return this.fed;
+    }
+
 
 }
 
