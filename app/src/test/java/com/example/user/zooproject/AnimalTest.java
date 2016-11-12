@@ -34,6 +34,11 @@ public class AnimalTest {
         assertEquals( "Feline", animal.animalType() );
     }
 
+    @Test
+    public void testHasAnimalBeenFed(){
+        assertEquals( true, animal.hasAnimalBeenFed() );
+    }
+
 
 
 
