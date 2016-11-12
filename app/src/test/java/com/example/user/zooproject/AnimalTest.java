@@ -26,7 +26,7 @@ public class AnimalTest {
 
     @Test
     public void testAnimalAge(){
-        assert
+        assertEquals( 20, animal.animalAge() );
     }
 
 
