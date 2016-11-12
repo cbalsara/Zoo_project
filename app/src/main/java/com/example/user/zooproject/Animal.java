@@ -29,5 +29,9 @@ public class Animal {
         public String animalType(){
             return this.type;
         }
+
+        public boolean hasAnimalBeenFed(){
+            return this.fed;
+        }
     }
 
