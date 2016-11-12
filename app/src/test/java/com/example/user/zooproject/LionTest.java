@@ -19,6 +19,14 @@ public class LionTest {
         lion = new Lion("Carnivore", "Cat", "Leo", 20, true);
     }
 
+
+    @Test
+    public void testingHasType(){
+        assertEquals( "Carnivore", lion.hasType() );
+    }
+
+
+
     @Test
     public void testingHasName(){
         assertEquals( "Leo", lion.hasName() );
