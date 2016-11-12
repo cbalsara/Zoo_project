@@ -29,6 +29,12 @@ public class AnimalTest {
         assertEquals( 20, animal.animalAge() );
     }
 
+    @Test
+    public void testAnimalType(){
+        assertEquals( "Feline", animal.animalType() );
+    }
+
+
 
 
 
