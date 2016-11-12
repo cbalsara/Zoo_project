@@ -18,7 +18,7 @@ public class Animal {
             this.fed = fed;
         }
 
-        public String getName(){
+        public String hasAName(){
             return this.name;
         }
 
