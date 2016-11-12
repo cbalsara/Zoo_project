@@ -23,6 +23,11 @@ public class FelineTest {
         assertEquals( "Carnivore", feline.hasType() );
     }
 
+    @Test
+    public void animalSpecie(){
+        assertEquals("Cat", feline.hasSpecie() );
+    }
+
 
 
 }
