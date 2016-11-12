@@ -22,10 +22,12 @@ public class Animal {
             return this.name;
         }
 
-    public int animalAge(){
-        return this.age;
-    }
+        public int animalAge(){
+            return this.age;
+        }
 
-
+        public String animalType(){
+            return this.type;
+        }
     }
 
