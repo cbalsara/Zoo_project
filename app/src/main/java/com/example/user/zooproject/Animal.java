@@ -6,17 +6,13 @@ package com.example.user.zooproject;
 
 public abstract class Animal {
 
-            private String name;
-            private int age;
             private String type;
-            private boolean fed;
+            private String specie;
 
 
-        public Animal(String name, int age, String type, boolean fed) {
-            this.name = name;
-            this.age = age;
+        public Animal(String type, String specie) {
             this.type = type;
-            this.fed = fed;
+            this.specie = specie;
         }
 
         public String animalName(){

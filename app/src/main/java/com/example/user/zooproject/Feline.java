@@ -11,5 +11,8 @@ public class Feline extends Animal {
         super(name, age, type, fed);
     }
 
-    
+
+    public String type(){
+        return "Canine";
+    }
 }
