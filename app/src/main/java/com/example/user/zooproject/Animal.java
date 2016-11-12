@@ -15,20 +15,14 @@ public abstract class Animal {
             this.specie = specie;
         }
 
-        public String animalName(){
-            return this.name;
-        }
-
-        public int animalAge(){
-            return this.age;
-        }
-
         public String animalType(){
             return this.type;
         }
 
-        public boolean hasAnimalBeenFed(){
-            return this.fed;
+        public String animalSpecie(){
+            return this.specie;
         }
-    }
+
+}
+
 

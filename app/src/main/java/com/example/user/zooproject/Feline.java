@@ -7,12 +7,11 @@ package com.example.user.zooproject;
 public class Feline extends Animal {
 
 
-    public Feline(String name, int age, String type, boolean fed) {
-        super(name, age, type, fed);
+    public Feline(String type,String specie) {
+        super(type, specie);
     }
 
-
     public String type(){
-        return "Canine";
+        return "Cat";
     }
 }
