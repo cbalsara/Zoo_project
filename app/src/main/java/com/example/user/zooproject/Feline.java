@@ -12,8 +12,10 @@ public class Feline extends Animal {
     }
 
     public String type() {
-        return "Cat";
+        return "Carnivore";
     }
 
-    public String 
+    public String specie(){
+        return "Cat";
+    }
 }
