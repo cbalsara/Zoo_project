@@ -20,8 +20,13 @@ public class LionTest {
     }
 
     @Test
-    public void hasName(){
+    public void testingHasName(){
         assertEquals( "Leo", lion.hasName() );
+    }
+
+    @Test
+    public void testingHasAge(){
+        assertEquals( 20, lion.hasAge() );
     }
 
 
