@@ -15,11 +15,11 @@ public abstract class Animal {
             this.specie = specie;
         }
 
-        public String animalType(){
+        public String hasType(){
             return this.type;
         }
 
-        public String animalSpecie(){
+        public String hasSpecie(){
             return this.specie;
         }
 

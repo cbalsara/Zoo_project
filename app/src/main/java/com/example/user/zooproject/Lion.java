@@ -6,7 +6,7 @@ package com.example.user.zooproject;
 
 public class Lion extends Feline {
 
-    public Lion(String name, int age, String type, boolean fed) {
-        super(name, age, type, fed);
+    public Lion(String type, String specie) {
+        super(type, specie);
     }
 }

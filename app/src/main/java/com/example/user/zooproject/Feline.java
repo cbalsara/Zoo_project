@@ -8,14 +8,8 @@ public class Feline extends Animal {
 
 
     public Feline(String type,String specie) {
+
         super(type, specie);
     }
 
-    public String type() {
-        return "Carnivore";
-    }
-
-    public String specie(){
-        return "Cat";
-    }
 }
