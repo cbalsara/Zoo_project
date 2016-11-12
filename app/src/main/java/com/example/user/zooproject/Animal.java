@@ -18,9 +18,13 @@ public class Animal {
             this.fed = fed;
         }
 
-        public String hasAName(){
+        public String animalName(){
             return this.name;
         }
+
+    public int animalAge(){
+        return this.age;
+    }
 
 
     }

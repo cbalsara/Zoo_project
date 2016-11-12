@@ -17,14 +17,19 @@ public class AnimalTest {
     @Before
     public void before(){
         animal = new Animal("Tony", 20, "Feline", true);
-        assertEquals( "Tony", animal.hasAName() );
     }
 
     @Test
     public void testAnimalName(){
+        assertEquals( "Tony", animal.animalName() );
     }
 
-    
+    @Test
+    public void testAnimalAge(){
+        assert
+    }
+
+
 
 
 
