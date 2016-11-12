@@ -21,10 +21,14 @@ public class LionTest {
 
 
     @Test
-    public void testingHasType(){
+    public void testingAnimalType(){
         assertEquals( "Carnivore", lion.hasType() );
     }
 
+    @Test
+    public void testingAnimalSpecie(){
+        assertEquals( "Cat", lion.hasSpecie() );
+    }
 
 
     @Test
