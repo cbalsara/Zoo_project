@@ -19,6 +19,11 @@ public class OwlTest {
     }
 
     @Test
+    public void testingHasType(){
+        assertEquals( "Omnivore", owl.animalType() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Olly", owl.hasName() );
     }

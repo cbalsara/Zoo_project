@@ -16,11 +16,11 @@ abstract public class Bird extends Animal {
         this.specie = "Bird";
     }
 
-    public String AnimalType(){
+    public String animalType(){
         return this.type;
     }
 
-    public String SpecieType(){
+    public String specieType(){
         return this.specie;
     }
 
