@@ -24,6 +24,10 @@ public class Eagle extends Bird {
         return this.name;
     }
 
+    public int hasAge(){
+        return this.age;
+    }
+
 
 
 
