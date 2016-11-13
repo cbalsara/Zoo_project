@@ -24,6 +24,11 @@ public class OwlTest {
     }
 
     @Test
+    public void testingSpecieKind(){
+        assertEquals( "Bird", owl.specieType() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Olly", owl.hasName() );
     }
