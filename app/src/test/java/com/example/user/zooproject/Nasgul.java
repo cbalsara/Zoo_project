@@ -24,4 +24,8 @@ public class Nasgul extends Mythical {
         return this.name;
     }
 
+    public int hasAge(){
+        return this.age;
+    }
+
 }
