@@ -22,7 +22,7 @@ public class TigerTest {
     public void testingHasType(){
         assertEquals( "Carnivore", tiger.hasType() );
     }
-    
+
     @Test
     public void testingSpecieType(){
         assertEquals( "Cat", tiger.hasSpecie() );
