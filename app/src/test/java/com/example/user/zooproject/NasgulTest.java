@@ -11,11 +11,11 @@ import static junit.framework.Assert.assertEquals;
 
 public class NasgulTest {
 
-    Nasgul nasgul;
+    Lion.Nasgul nasgul;
 
     @Before
     public void before(){
-        nasgul = new Nasgul("", "", "Bob", 10000, false);
+        nasgul = new Lion.Nasgul("", "", "Bob", 10000, false);
     }
 
     @Test
