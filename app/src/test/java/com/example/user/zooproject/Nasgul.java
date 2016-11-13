@@ -28,4 +28,8 @@ public class Nasgul extends Mythical {
         return this.age;
     }
 
+    public boolean hasBeenFed(){
+        return this.fed;
+    }
+
 }
