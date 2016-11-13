@@ -10,7 +10,8 @@ public class Owl extends Bird {
     private int age;
     private boolean fed;
 
-    public Owl(String type, String specie, int age, boolean fed){
+    public Owl(String type, String specie, String name, int age, boolean fed){
+
         super(type, specie);
 
         this.name = name;
