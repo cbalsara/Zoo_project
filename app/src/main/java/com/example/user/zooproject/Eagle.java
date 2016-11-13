@@ -20,7 +20,9 @@ public class Eagle extends Bird {
 
     }
 
-    
+    public String hasName(){
+        return this.name;
+    }
 
 
 
