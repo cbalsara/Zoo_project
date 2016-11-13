@@ -28,6 +28,11 @@ public class EagleTest {
         assertEquals( 5, eagle.hasAge() );
     }
 
+    @Test
+    public void testingHasEaten(){
+        assertEquals( true, eagle.hasEaten() );
+    }
+
 
 
 
