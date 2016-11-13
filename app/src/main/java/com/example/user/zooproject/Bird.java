@@ -16,7 +16,9 @@ abstract public class Bird extends Animal {
         this.specie = "Bird";
     }
 
-    
+    public String hasType(){
+        return this.type;
+    }
 
 
 
