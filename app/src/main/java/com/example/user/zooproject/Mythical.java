@@ -16,7 +16,11 @@ abstract public class Mythical extends Animal {
         this.specie = "Myth";
     }
 
-    
+    public String getAnimalType(){
+        return this.type;
+    }
+
+
 
 
 
