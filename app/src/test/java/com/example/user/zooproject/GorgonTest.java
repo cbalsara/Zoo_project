@@ -19,6 +19,11 @@ public class GorgonTest {
     }
 
     @Test
+    public void testingAnimalType(){
+        assertEquals( "Carnivore", gorgon.getAnimalType() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Gillian", gorgon.hasName() );
     }
