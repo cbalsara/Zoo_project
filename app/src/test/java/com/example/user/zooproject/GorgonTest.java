@@ -28,6 +28,11 @@ public class GorgonTest {
         assertEquals( 600000, gorgon.hasAge() );
     }
 
+    @Test
+    public void testingHasBeenFed(){
+        assertEquals( false, gorgon.hasBeenFed() );
+    }
+
 
 
 

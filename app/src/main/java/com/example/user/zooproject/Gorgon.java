@@ -28,4 +28,8 @@ public class Gorgon extends Mythical {
         return this.age;
     }
 
+    public boolean hasBeenFed(){
+        return this.fed;
+    }
+
 }
