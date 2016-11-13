@@ -19,6 +19,11 @@ public class NasgulTest {
     }
 
     @Test
+    public void testingAnimalType(){
+        assertEquals( "Carnivore", nasgul.getAnimalType() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Bob", nasgul.hasName() );
     }
