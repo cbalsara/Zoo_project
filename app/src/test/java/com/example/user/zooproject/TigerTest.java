@@ -28,6 +28,11 @@ public class TigerTest {
         assertEquals( 40, tiger.hasAnAge() );
     }
 
+    @Test
+    public void testingIfBeenFed(){
+        assertEquals( false, tiger.hasBeenFed() );
+    }
+
 
 
 
