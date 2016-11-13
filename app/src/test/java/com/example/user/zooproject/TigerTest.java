@@ -19,6 +19,11 @@ public class TigerTest {
     }
 
     @Test
+    public void testingHasType(){
+        assertEquals("Carnivore", tiger.hasType() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Tony", tiger.hasName() );
     }
