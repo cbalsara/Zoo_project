@@ -16,7 +16,7 @@ public class LionTest {
 
     @Before
     public void before(){
-        lion = new Lion("Carnivore", "Cat", "Leo", 20, true);
+        lion = new Lion("Omnivore", "Cat", "Leo", 20, true);
     }
 
 
