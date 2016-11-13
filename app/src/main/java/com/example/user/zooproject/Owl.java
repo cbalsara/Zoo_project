@@ -32,9 +32,4 @@ public class Owl extends Bird {
         return this.fed;
     }
 
-
-
-
-
-
 }

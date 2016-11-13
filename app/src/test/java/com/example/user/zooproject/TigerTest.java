@@ -43,16 +43,4 @@ public class TigerTest {
         assertEquals( false, tiger.hasBeenFed() );
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -24,8 +24,4 @@ abstract public class Bird extends Animal {
         return this.specie;
     }
 
-
-
-
-
 }
