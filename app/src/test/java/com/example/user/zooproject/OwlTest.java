@@ -23,7 +23,7 @@ public class OwlTest {
         assertEquals( "Olly", owl.hasName() );
     }
 
-            
+
 
 
 
