@@ -23,5 +23,9 @@ public class Gorgon extends Mythical {
     public String hasName(){
         return this.name;
     }
-    
+
+    public int hasAge(){
+        return this.age;
+    }
+
 }
