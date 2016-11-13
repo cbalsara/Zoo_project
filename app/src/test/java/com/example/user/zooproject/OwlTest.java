@@ -28,6 +28,11 @@ public class OwlTest {
         assertEquals( 100, owl.hasAge() );
     }
 
+    @Test
+    public void testingIfEaten(){
+        assertEquals( true, owl.hasEaten() );
+    }
+
 
 
 
