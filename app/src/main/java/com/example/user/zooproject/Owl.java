@@ -13,8 +13,14 @@ public class Owl extends Bird {
     public Owl(String type, String specie, int age, boolean fed){
         super(type, specie);
 
-        
+        this.name = name;
+        this.age = age;
+        this.fed = fed;
 
+    }
+
+    public String hasName(){
+        return this.name;
     }
 
 
