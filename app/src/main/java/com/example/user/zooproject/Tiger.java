@@ -20,6 +20,10 @@ public class Tiger extends Feline {
 
     }
 
+    public String hasName(){
+        return this.name;
+    }
+
 
 
 

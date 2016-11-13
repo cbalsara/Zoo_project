@@ -17,9 +17,8 @@ abstract public class Feline extends Animal {
         this.specie = "Cat";
     }
 
-//    add in here a method that sets the type to "Carnivore" and the Specie to "Cat"
-
-
+//    add in here a method that sets the type to "Carnivore" and the Specie to "Cat" for
+//    all subclasses that inherit from this
 
     public String hasType(){
         return this.type;
