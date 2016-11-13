@@ -19,6 +19,11 @@ public class EagleTest {
     }
 
     @Test
+    public void testingAnimalType(){
+        assertEquals( "Omnivore", eagle.animalType() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Evie", eagle.hasName() );
     }
