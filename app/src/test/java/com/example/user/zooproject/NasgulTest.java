@@ -23,6 +23,11 @@ public class NasgulTest {
         assertEquals( "Bob", nasgul.hasName() );
     }
 
+    @Test
+    public void testingHasAge(){
+        assertEquals( 10000, nasgul.hasAge() );
+    }
+
 
 
 
