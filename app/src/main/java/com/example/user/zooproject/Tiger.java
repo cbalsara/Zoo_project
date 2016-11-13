@@ -24,7 +24,7 @@ public class Tiger extends Feline {
         return this.name;
     }
 
-    public int age(){
+    public int hasAnAge(){
         return this.age;
     }
 

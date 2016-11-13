@@ -23,6 +23,11 @@ public class TigerTest {
         assertEquals( "Tony", tiger.hasName() );
     }
 
+    @Test
+    public void testingHasAnAge(){
+        assertEquals( 40, tiger.hasAnAge() );
+    }
+
 
 
 
