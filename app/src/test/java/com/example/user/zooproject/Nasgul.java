@@ -20,5 +20,8 @@ public class Nasgul extends Mythical {
 
     }
 
+    public String hasName(){
+        return this.name;
+    }
 
 }
