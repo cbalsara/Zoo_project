@@ -24,6 +24,11 @@ public class NasgulTest {
     }
 
     @Test
+    public void testingAnimalSpecie(){
+        assertEquals( "Mythical", nasgul.getAnimalSpecie() );
+    }
+
+    @Test
     public void testingHasName(){
         assertEquals( "Bob", nasgul.hasName() );
     }

@@ -13,7 +13,7 @@ abstract public class Mythical extends Animal {
         super(type, specie);
 
         this.type = "Carnivore";
-        this.specie = "Myth";
+        this.specie = "Mythical";
     }
 
     public String getAnimalType(){
