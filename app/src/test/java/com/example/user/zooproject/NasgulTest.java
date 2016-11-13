@@ -28,6 +28,11 @@ public class NasgulTest {
         assertEquals( 10000, nasgul.hasAge() );
     }
 
+    @Test
+    public void testingHasBeenFed(){
+        assertEquals( false, nasgul.hasBeenFed() );
+    }
+
 
 
 
