@@ -24,6 +24,11 @@ public class EnclosureTest {
     }
 
     @Test
+    public void testFelineEnclosureCurrentlyEmpty(){
+        assertEquals( 0, felineEnclosure.enclosureSize() );
+    }
+
+    @Test
     public void testCatEnclosureSize(){
         Tiger tiger = new Tiger("", "", "Tony", 10, true);
         Lion lion = new Lion("", "", "Timmaae", 4, true);
@@ -31,14 +36,6 @@ public class EnclosureTest {
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.addAnimal(lion);
         assertEquals( 2, felineEnclosure.getAnimals().size() );
-    }
-
-    @Test
-    public void testRemoveAllAnimal(){
-        Tiger tiger = new Tiger("", "", "Tony", 10, true);
-        felineEnclosure.addAnimal(tiger);
-        felineEnclosure.removeAllAnimals();
-        assertEquals(felineEnclosure.enclosureSize(), 0);
     }
 
     @Test
@@ -50,6 +47,14 @@ public class EnclosureTest {
         assertEquals(2, birdEnclosure.getAnimals().size() );
     }
 
+
+    @Test
+    public void testRemoveAllAnimals(){
+        Tiger tiger = new Tiger("", "", "Tony", 10, true);
+        felineEnclosure.addAnimal(tiger);
+        felineEnclosure.removeAllAnimals();
+        assertEquals(felineEnclosure.enclosureSize(), 0);
+    }
 
 
 }
