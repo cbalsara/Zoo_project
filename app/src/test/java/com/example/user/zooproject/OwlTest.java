@@ -15,7 +15,7 @@ public class OwlTest {
 
     @Before
     public void before(){
-        owl = new Owl("", "", "Olly", 100, true);
+        owl = new Owl(animalType.BIRD, "", "Olly", 100, true);
     }
 
     @Test

@@ -15,7 +15,7 @@ public class EagleTest {
 
     @Before
     public void before(){
-        eagle = new Eagle("", "", "Evie", 5, true);
+        eagle = new Eagle(animalType.BIRD, "", "Evie", 5, true);
     }
 
     @Test

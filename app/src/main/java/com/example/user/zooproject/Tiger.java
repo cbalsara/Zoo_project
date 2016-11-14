@@ -10,7 +10,7 @@ public class Tiger extends Feline implements Purrable {
     private int age;
     private boolean fed;
 
-    public Tiger(String type, String specie, String name, int age, boolean fed){
+    public Tiger(Enum type, String specie, String name, int age, boolean fed){
 
         super(type, specie);
 

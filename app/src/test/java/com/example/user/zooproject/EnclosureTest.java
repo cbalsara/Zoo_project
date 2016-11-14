@@ -4,6 +4,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 
+import java.util.ArrayList;
+
+import static com.example.user.zooproject.animalType.BIRD;
+import static com.example.user.zooproject.animalType.FELINE;
+import static com.example.user.zooproject.animalType.MYTHICAL;
 import static junit.framework.Assert.assertEquals;
 
 
@@ -13,44 +18,55 @@ import static junit.framework.Assert.assertEquals;
 
 public class EnclosureTest {
 
-    Enclosure enclosure;
+    Enclosure felineEnclosure;
+    Enclosure birdEnclosure;
+    Enclosure mythicalEnclosure;
 
 
     @Before
     public void before(){
-        enclosure = new Enclosure();
+        ArrayList<Feline> f =  new ArrayList<Feline>();
+        felineEnclosure = new Enclosure(FELINE);
+
+        ArrayList<Bird> b = new ArrayList<Bird>();
+        birdEnclosure = new Enclosure(BIRD);
+
+        ArrayList<Mythical> m = new ArrayList<Mythical>();
+        mythicalEnclosure = new Enclosure(MYTHICAL);
     }
 
     @Test
     public void testFelineEnclosureCurrentlyEmpty(){
-        assertEquals( 0, enclosure.enclosureSize() );
+        assertEquals( 0, felineEnclosure.enclosureSize() );
     }
 
     @Test
-    public void testAddToEnclosure(){
-        Tiger tiger = new Tiger("", "", "Tony", 10, true);
-        Lion lion = new Lion("", "", "Timmaae", 4, true);
-        enclosure.addAnimal(tiger);
-        enclosure.addAnimal(lion);
-        assertEquals( 2, enclosure.getAnimals().size() );
+    public void testAddToFelineEnclosure(){
+        Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
+        Lion lion = new Lion(animalType.FELINE, "", "Timmaae", 4, true);
+        Owl owl = new Owl(animalType.BIRD, "", "Woo", 4, true);
+        felineEnclosure.addAnimal(tiger);
+        felineEnclosure.addAnimal(lion);
+        felineEnclosure.addAnimal(owl);
+        assertEquals( 2, felineEnclosure.getAnimals().size() );
     }
 
 
     @Test
     public void testRemoveAnimal(){
-        Tiger tiger = new Tiger("", "", "Tony", 10, true);
-        Lion lion = new Lion("", "", "Timmaae", 4, true);
-        enclosure.addAnimal(tiger);
-        enclosure.addAnimal(lion);
-        Animal theChosenAnimal = enclosure.removeAnimal();
-        assertEquals( enclosure.enclosureSize(), 1 );
+        Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
+        Lion lion = new Lion(animalType.FELINE, "", "Timmaae", 4, true);
+        felineEnclosure.addAnimal(tiger);
+        felineEnclosure.addAnimal(lion);
+        Animal theChosenAnimal = felineEnclosure.removeAnimal();
+        assertEquals( felineEnclosure.enclosureSize(), 1 );
     }
 
     @Test
     public void testRemoveAllAnimals(){
-        Tiger tiger = new Tiger("", "", "Tony", 10, true);
-        enclosure.addAnimal(tiger);
-        enclosure.removeAllAnimals();
-        assertEquals( enclosure.enclosureSize(), 0 );
+        Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
+        felineEnclosure.addAnimal(tiger);
+        felineEnclosure.removeAllAnimals();
+        assertEquals( felineEnclosure.enclosureSize(), 0 );
     }
 }

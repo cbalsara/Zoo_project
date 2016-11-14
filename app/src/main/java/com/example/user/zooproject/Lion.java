@@ -11,7 +11,7 @@ public class Lion extends Feline implements Purrable {
     private boolean fed;
 
 
-    public Lion(String type, String specie, String name, int age, boolean fed) {
+    public Lion(Enum type, String specie, String name, int age, boolean fed) {
 
         super(type, specie);
 

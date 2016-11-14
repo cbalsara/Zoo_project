@@ -6,17 +6,17 @@ package com.example.user.zooproject;
 
 public abstract class Bird extends Animal {
 
-    private String type;
+    private Enum type;
     private String specie;
 
-    public Bird(String type, String specie){
+    public Bird(Enum type, String specie){
         super(type, specie);
 
-        this.type = "Omnivore";
-        this.specie = "Bird";
+        this.type = animalType.BIRD;
+        this.specie = "Shag";
     }
 
-    public String animalType(){
+    public Enum animalType(){
         return this.type;
     }
 

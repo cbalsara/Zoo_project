@@ -10,7 +10,7 @@ public class Owl extends Bird implements Flyable {
     private int age;
     private boolean fed;
 
-    public Owl(String type, String specie, String name, int age, boolean fed){
+    public Owl(Enum type, String specie, String name, int age, boolean fed){
 
         super(type, specie);
 

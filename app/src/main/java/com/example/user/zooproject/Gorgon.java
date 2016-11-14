@@ -10,7 +10,7 @@ public class Gorgon extends Mythical implements Screechable {
     private int age;
     private boolean fed;
 
-    public Gorgon(String type, String specie, String name, int age, boolean fed){
+    public Gorgon(Enum type, String specie, String name, int age, boolean fed){
 
         super(type,specie);
 

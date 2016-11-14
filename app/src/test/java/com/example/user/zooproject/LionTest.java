@@ -16,18 +16,18 @@ public class LionTest {
 
     @Before
     public void before(){
-        lion = new Lion("", "", "Leo", 20, true);
+        lion = new Lion(animalType.FELINE, "", "Leo", 20, true);
     }
 
 
     @Test
     public void testingAnimalType(){
-        assertEquals( "Carnivore", lion.hasType() );
+        assertEquals( "Carnivore", lion.getType() );
     }
 
     @Test
     public void testingAnimalSpecie(){
-        assertEquals( "Cat", lion.hasSpecie() );
+        assertEquals( "Cat", lion.getSpecie() );
     }
 
 

@@ -6,29 +6,22 @@ package com.example.user.zooproject;
 
 public abstract class Mythical extends Animal {
 
-    private String type;
+    private Enum type;
     private String specie;
 
-    public Mythical(String type, String specie){
+    public Mythical(Enum type, String specie){
         super(type, specie);
 
-        this.type = "Carnivore";
-        this.specie = "Mythical";
+        this.type = animalType.MYTHICAL;
+        this.specie = "Legendary";
     }
 
-    public String getAnimalType(){
+    public Enum animalType(){
         return this.type;
     }
 
-    public String getAnimalSpecie(){
+    public String specieType(){
         return this.specie;
     }
-
-
-
-
-
-
-
 
 }

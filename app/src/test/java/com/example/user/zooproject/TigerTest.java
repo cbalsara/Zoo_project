@@ -15,17 +15,17 @@ public class TigerTest {
 
     @Before
     public void before(){
-        tiger = new Tiger("", "", "Tony", 40, false);
+        tiger = new Tiger(animalType.FELINE, "", "Tony", 40, false);
     }
 
     @Test
     public void testingHasType(){
-        assertEquals( "Carnivore", tiger.hasType() );
+        assertEquals( "Carnivore", tiger.getType() );
     }
 
     @Test
     public void testingSpecieType(){
-        assertEquals( "Cat", tiger.hasSpecie() );
+        assertEquals( "Cat", tiger.getSpecie() );
     }
 
     @Test

@@ -15,17 +15,17 @@ public class NasgulTest {
 
     @Before
     public void before(){
-        nasgul = new Nasgul("", "", "Bob", 10000, false);
+        nasgul = new Nasgul(animalType.MYTHICAL, "", "Bob", 10000, false);
     }
 
     @Test
     public void testingAnimalType(){
-        assertEquals( "Carnivore", nasgul.getAnimalType() );
+        assertEquals( "MYTHICAL", nasgul.getType() );
     }
 
     @Test
     public void testingAnimalSpecie(){
-        assertEquals( "Mythical", nasgul.getAnimalSpecie() );
+        assertEquals( "Mythical", nasgul.getSpecie() );
     }
 
     @Test

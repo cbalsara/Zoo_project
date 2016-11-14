@@ -15,17 +15,17 @@ public class GorgonTest {
 
     @Before
     public void before(){
-        gorgon = new Gorgon("", "", "Gillian", 600000, false);
+        gorgon = new Gorgon(animalType.MYTHICAL, "", "Gillian", 600000, false);
     }
 
     @Test
     public void testingAnimalType(){
-        assertEquals( "Carnivore", gorgon.getAnimalType() );
+        assertEquals( "Carnivore", gorgon.getType() );
     }
 
     @Test
     public void testingAnimalSpecie(){
-        assertEquals( "Mythical", gorgon.getAnimalSpecie() );
+        assertEquals( "Mythical", gorgon.getSpecie() );
     }
 
     @Test

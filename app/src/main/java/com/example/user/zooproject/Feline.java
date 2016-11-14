@@ -6,27 +6,27 @@ package com.example.user.zooproject;
 
 public abstract class Feline extends Animal {
 
-    private String type;
+    private Enum type;
     private String specie;
 
-    public Feline(String type,String specie) {
+    public Feline(Enum type, String specie) {
 
         super(type, specie);
 
-        this.type = "Carnivore";
+        this.type = animalType.FELINE;
         this.specie = "Cat";
     }
 
 //    add in here a method that sets the type to "Carnivore" and the Specie to "Cat" for
 //    all subclasses that inherit from this
 
-    public String hasType(){
+    public Enum animalType(){
         return this.type;
     }
 
-    public String hasSpecie(){
+    public String specieType(){
         return this.specie;
-    }
+   }
 
 
 }

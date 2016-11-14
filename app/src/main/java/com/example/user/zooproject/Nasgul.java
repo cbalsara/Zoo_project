@@ -10,7 +10,7 @@ public class Nasgul extends Mythical implements Screechable {
         private int age;
         private boolean fed;
 
-        public Nasgul(String type, String specie, String name, int age, boolean fed){
+        public Nasgul(Enum type, String specie, String name, int age, boolean fed){
 
             super(type,specie);
 
@@ -34,6 +34,10 @@ public class Nasgul extends Mythical implements Screechable {
 
         public String screech(){
             return "wailing";
+        }
+
+        public String getSpecie(){
+            return "Mythical";
         }
 
     }

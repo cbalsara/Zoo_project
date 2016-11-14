@@ -9,25 +9,30 @@ import java.util.ArrayList;
 public class Enclosure {
 
     private ArrayList<Animal> animals;
+    private Enum animalType;
 
-    public Enclosure(){
+    public Enclosure(Enum animalType){
         this.animals = new ArrayList<Animal>();
+        this.animalType = animalType;
     }
 
     public int enclosureSize(){
         return this.animals.size();
     }
-
-    public void addAnimal(Animal anAnimal){
-        this.animals.add(anAnimal);
+//      method to add an animal to the animal arrayList
+    public void addAnimal(Animal anAnimal) {
+        //check if anAnimal is == this.animalType
+        if (anAnimal.getType() == this.animalType) {
+            this.animals.add(anAnimal);
+        }
     }
 
-//    method to actually get the arrayList of animals
+//    method to return the arrayList of animals
     public ArrayList<Animal> getAnimals(){
         return this.animals;
     }
 
-//    remove an animal from the arrayList i.e. remove an animal from the enclosure
+//    method to remove an animal from the animal arrayList
     public Animal removeAnimal(){
         if (enclosureSize() > 0){
             Animal theChosenAnimal = animals.remove(0);
@@ -36,7 +41,7 @@ public class Enclosure {
         return null;
     }
 
-//    clear the entire arrayList i.e remove all animals from the  enclosure
+//    method to remove all the animals from the animal arrayList
     public void removeAllAnimals(){
         this.animals.clear();
     }
