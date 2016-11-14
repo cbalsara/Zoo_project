@@ -3,6 +3,7 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.example.user.zooproject.animalType.BIRD;
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -15,17 +16,17 @@ public class EagleTest {
 
     @Before
     public void before(){
-        eagle = new Eagle(animalType.BIRD, "", "Evie", 5, true);
+        eagle = new Eagle(BIRD, "", "Evie", 5, true);
     }
 
     @Test
     public void testingAnimalSpecie(){
-        assertEquals( "Bird", eagle.specieType() );
+        assertEquals( "Shag", eagle.specieType() );
     }
 
     @Test
     public void testingAnimalType(){
-        assertEquals( "Omnivore", eagle.animalType() );
+        assertEquals(BIRD, eagle.animalType() );
     }
 
     @Test
