@@ -3,6 +3,7 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.example.user.zooproject.animalType.FELINE;
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -15,12 +16,12 @@ public class TigerTest {
 
     @Before
     public void before(){
-        tiger = new Tiger(animalType.FELINE, "", "Tony", 40, false);
+        tiger = new Tiger(FELINE, "", "Tony", 40, false);
     }
 
     @Test
     public void testingHasType(){
-        assertEquals( "Carnivore", tiger.getType() );
+        assertEquals( FELINE, tiger.getType() );
     }
 
     @Test
