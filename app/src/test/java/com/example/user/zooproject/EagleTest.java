@@ -43,6 +43,11 @@ public class EagleTest {
         assertEquals( true, eagle.hasBeenFed() );
     }
 
+    @Test
+    public void testCanFly(){
+        assertEquals( "flapping", eagle.fly() );
+    }
+
 
 
 

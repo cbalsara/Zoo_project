@@ -3,10 +3,9 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
+
 
 /**
  * Created by user on 14/11/2016.
@@ -28,7 +27,7 @@ public class EnclosureTest {
     }
 
     @Test
-    public void testFelineEnclosureSize(){
+    public void testAddToEnclosure(){
         Tiger tiger = new Tiger("", "", "Tony", 10, true);
         Lion lion = new Lion("", "", "Timmaae", 4, true);
         enclosure.addAnimal(tiger);
