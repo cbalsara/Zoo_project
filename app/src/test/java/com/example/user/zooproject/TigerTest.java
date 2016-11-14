@@ -45,7 +45,7 @@ public class TigerTest {
 
     @Test
     public void testCanPurr(){
-        assertEquals( "purrrrr", tiger.canPurr() );
+        assertEquals( "purrrrr", tiger.purr() );
     }
 
 }

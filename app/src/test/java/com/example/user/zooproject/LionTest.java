@@ -48,7 +48,7 @@ public class LionTest {
 
     @Test
     public void testPurr(){
-        assertEquals( "purrrrr", lion.canPurr() );
+        assertEquals( "purrrrr", lion.purr() );
     }
 
 

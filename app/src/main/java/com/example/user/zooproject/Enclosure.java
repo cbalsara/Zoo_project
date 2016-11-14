@@ -10,7 +10,7 @@ public class Enclosure {
 
     private ArrayList<Animal> animals;
 
-    public Enclosure(ArrayList<Animal> animalList) {
+    public Enclosure(ArrayList<Animal> animalList){
         this.animals = animalList;
     }
 
@@ -22,6 +22,14 @@ public class Enclosure {
         return this.animals;
     }
 
+//    remove an animal from the arraylist i.e. remove an animal from the enclosure
+    public void removeAnimal(Animal anAnimal){
+        this.animals.remove(2);
+    }
+
+//    clear the entire arraylist i.e remove all animals from the  enclosure
+   
+    }
 
 }
 

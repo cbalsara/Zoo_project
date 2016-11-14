@@ -4,7 +4,7 @@ package com.example.user.zooproject;
  * Created by user on 12/11/2016.
  */
 
-public class Lion extends Feline {
+public class Lion extends Feline implements Purrable {
 
     private String name;
     private int age;
@@ -32,7 +32,7 @@ public class Lion extends Feline {
         return this.fed;
     }
 
-    public String canPurr(){
+    public String purr(){
         return "purrrrr";
     }
 

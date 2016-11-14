@@ -15,13 +15,14 @@ public class EnclosureTest {
 
     Enclosure catEnclosure;
 
+
     @Before
     public void before(){
         catEnclosure = new Enclosure();
     }
 
     @Test
-    public void testEnclosureSize(){
+    public void testCatEnclosureSize(){
         Tiger tiger = new Tiger("Carnivore", "Cat", "Tony", 10, true);
 //        Gorgon gorgon = new Gorgon("Carnivore", "Myth", "Gillian", 10000, false);
         catEnclosure.addAnimal(tiger);
