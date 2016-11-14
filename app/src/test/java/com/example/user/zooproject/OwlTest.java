@@ -40,7 +40,7 @@ public class OwlTest {
 
     @Test
     public void testingIfEaten(){
-        assertEquals( true, owl.hasEaten() );
+        assertEquals( true, owl.hasBeenFed() );
     }
 
 

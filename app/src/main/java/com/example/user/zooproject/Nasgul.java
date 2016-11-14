@@ -34,4 +34,3 @@ public class Nasgul extends Mythical {
 
     }
 
-}

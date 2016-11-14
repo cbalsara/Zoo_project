@@ -28,7 +28,7 @@ public class Owl extends Bird {
         return this.age;
     }
 
-    public boolean hasEaten(){
+    public boolean hasBeenFed(){
         return this.fed;
     }
 

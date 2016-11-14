@@ -40,7 +40,7 @@ public class EagleTest {
 
     @Test
     public void testingHasEaten(){
-        assertEquals( true, eagle.hasEaten() );
+        assertEquals( true, eagle.hasBeenFed() );
     }
 
 
