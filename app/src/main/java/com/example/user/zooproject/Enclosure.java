@@ -10,8 +10,8 @@ public class Enclosure {
 
     private ArrayList<Animal> animals;
 
-    public Enclosure(ArrayList<Animal> animalList){
-        this.animals = animalList;
+    public Enclosure(){
+        this.animals = new ArrayList<>();
     }
 
     public void addAnimal(Animal anAnimal){

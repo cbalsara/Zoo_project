@@ -13,21 +13,34 @@ import static junit.framework.Assert.assertEquals;
 
 public class EnclosureTest {
 
-    Enclosure catEnclosure;
+    Enclosure felineEnclosure;
+    Enclosure birdEnclosure;
 
 
     @Before
     public void before(){
-        catEnclosure = new Enclosure();
+        felineEnclosure = new Enclosure();
+        birdEnclosure = new Enclosure();
     }
 
     @Test
     public void testCatEnclosureSize(){
-        Tiger tiger = new Tiger("Carnivore", "Cat", "Tony", 10, true);
+        Tiger tiger = new Tiger("", "", "Tony", 10, true);
+        Lion lion = new Lion("", "", "Timmaae", 4, true);
 //        Gorgon gorgon = new Gorgon("Carnivore", "Myth", "Gillian", 10000, false);
-        catEnclosure.addAnimal(tiger);
-//        catEnclosure.addAnimal(gorgon);
-        assertEquals( 1, catEnclosure.getAnimals().size() );
+        felineEnclosure.addAnimal(tiger);
+        felineEnclosure.addAnimal(lion);
+        assertEquals( 2, felineEnclosure.getAnimals().size() );
+    }
+
+    @Test
+    public void testBirdEnclosureSize(){
+        Eagle eagle = new Eagle("", "", "Eddie", 20, false);
+        Owl owl = new Owl("", "", "Hooty", 100, true);
+        birdEnclosure.addAnimal(eagle);
+        birdEnclosure.addAnimal(owl);
+        assertEquals(2, birdEnclosure.getAnimals().size() );
+
     }
 
 
