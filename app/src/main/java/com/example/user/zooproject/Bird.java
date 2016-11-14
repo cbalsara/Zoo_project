@@ -4,7 +4,7 @@ package com.example.user.zooproject;
  * Created by user on 13/11/2016.
  */
 
-abstract public class Bird extends Animal {
+public abstract class Bird extends Animal {
 
     private String type;
     private String specie;

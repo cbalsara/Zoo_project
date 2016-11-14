@@ -8,26 +8,24 @@ import java.util.ArrayList;
 
 public class Enclosure {
 
-    private ArrayList<Flyable> birdEnclosure;
+    private ArrayList<Animal> animals;
 
-public Enclosure(){
-    this.birdEnclosure = new ArrayList<Flyable>();
-}
+    public Enclosure(ArrayList<Animal> animalList) {
+        this.animals = animalList;
+    }
 
+    public void addAnimal(Animal anAnimal){
+        this.animals.add(anAnimal);
+    }
 
-
-
-
-
-
-
-
-
-
-
+    public ArrayList<Animal> getAnimals(){
+        return this.animals;
+    }
 
 
 }
+
+
 
 
 
