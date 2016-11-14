@@ -4,7 +4,7 @@ package com.example.user.zooproject;
  * Created by user on 13/11/2016.
  */
 
-public class Owl extends Bird {
+public class Owl extends Bird implements Flyable {
 
     private String name;
     private int age;
@@ -30,6 +30,10 @@ public class Owl extends Bird {
 
     public boolean hasBeenFed(){
         return this.fed;
+    }
+
+    public String fly(){
+        return "flapping";
     }
 
 }
