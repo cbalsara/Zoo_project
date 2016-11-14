@@ -3,6 +3,7 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.example.user.zooproject.animalType.MYTHICAL;
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -15,17 +16,17 @@ public class GorgonTest {
 
     @Before
     public void before(){
-        gorgon = new Gorgon(animalType.MYTHICAL, "", "Gillian", 600000, false);
+        gorgon = new Gorgon(MYTHICAL, "", "Gillian", 600000, false);
     }
 
     @Test
     public void testingAnimalType(){
-        assertEquals( "Carnivore", gorgon.getType() );
+        assertEquals( MYTHICAL, gorgon.getType() );
     }
 
     @Test
     public void testingAnimalSpecie(){
-        assertEquals( "Mythical", gorgon.getSpecie() );
+        assertEquals( "Legendary", gorgon.getSpecie() );
     }
 
     @Test
