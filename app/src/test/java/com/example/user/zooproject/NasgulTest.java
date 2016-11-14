@@ -43,6 +43,11 @@ public class NasgulTest {
         assertEquals( false, nasgul.hasBeenFed() );
     }
 
+    @Test
+    public void testCanScreech(){
+        assertEquals( "wailing", nasgul.screech() );
+    }
+
 
 
 
