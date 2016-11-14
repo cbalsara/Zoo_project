@@ -43,5 +43,10 @@ public class OwlTest {
         assertEquals( true, owl.hasBeenFed() );
     }
 
+    @Test
+    public void testCanFly(){
+        assertEquals( "flapping", owl.fly() );
+    }
+
 
 }
