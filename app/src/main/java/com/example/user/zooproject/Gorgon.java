@@ -4,7 +4,7 @@ package com.example.user.zooproject;
  * Created by user on 13/11/2016.
  */
 
-public class Gorgon extends Mythical {
+public class Gorgon extends Mythical implements Screechable {
 
     private String name;
     private int age;
@@ -30,6 +30,10 @@ public class Gorgon extends Mythical {
 
     public boolean hasBeenFed(){
         return this.fed;
+    }
+
+    public String screech(){
+        return "wailing";
     }
 
 }
