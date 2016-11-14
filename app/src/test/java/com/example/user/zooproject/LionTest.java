@@ -46,6 +46,11 @@ public class LionTest {
         assertEquals( true, lion.hasBeenFed() );
     }
 
+    @Test
+    public void testPurr(){
+        assertEquals( "purrrrr", lion.canPurr() );
+    }
+
 
 
 

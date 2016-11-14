@@ -32,7 +32,7 @@ public class Lion extends Feline {
         return this.fed;
     }
 
-    public String purr(){
+    public String canPurr(){
         return "purrrrr";
     }
 
