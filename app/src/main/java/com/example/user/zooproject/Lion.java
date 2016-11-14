@@ -32,5 +32,9 @@ public class Lion extends Feline {
         return this.fed;
     }
 
+    public String purr(){
+        return "purrrrr";
+    }
+
 }
 
