@@ -37,7 +37,7 @@ public class Nasgul extends Mythical implements Screechable {
         }
 
         public String getSpecie(){
-            return "Mythical";
+            return "Legendary";
         }
 
     }

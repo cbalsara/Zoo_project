@@ -20,7 +20,7 @@ public abstract class Mythical extends Animal {
         return this.type;
     }
 
-    public String specieType(){
+    public String getSpecie(){
         return this.specie;
     }
 

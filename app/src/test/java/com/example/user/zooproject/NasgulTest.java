@@ -3,6 +3,7 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.example.user.zooproject.animalType.MYTHICAL;
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -15,17 +16,17 @@ public class NasgulTest {
 
     @Before
     public void before(){
-        nasgul = new Nasgul(animalType.MYTHICAL, "", "Bob", 10000, false);
+        nasgul = new Nasgul(MYTHICAL, "", "Bob", 10000, false);
     }
 
     @Test
     public void testingAnimalType(){
-        assertEquals( "MYTHICAL", nasgul.getType() );
+        assertEquals( MYTHICAL, nasgul.getType() );
     }
 
     @Test
     public void testingAnimalSpecie(){
-        assertEquals( "Mythical", nasgul.getSpecie() );
+        assertEquals( "Legendary", nasgul.getSpecie() );
     }
 
     @Test
