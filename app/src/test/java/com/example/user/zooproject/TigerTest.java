@@ -43,4 +43,9 @@ public class TigerTest {
         assertEquals( false, tiger.hasBeenFed() );
     }
 
+    @Test
+    public void testCanPurr(){
+        assertEquals( "purrrrr", tiger.canPurr() );
+    }
+
 }

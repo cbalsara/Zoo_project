@@ -32,7 +32,7 @@ public class Tiger extends Feline implements Purrable {
         return this.fed;
     }
 
-    public String purr(){
+    public String canPurr(){
         return "purrrrr";
     }
 
