@@ -43,6 +43,11 @@ public class GorgonTest {
         assertEquals( false, gorgon.hasBeenFed() );
     }
 
+    @Test
+    public void testCanScreech(){
+        assertEquals( "wailing", gorgon.screech() );
+    }
+
 
 
 
