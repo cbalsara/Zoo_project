@@ -14,6 +14,10 @@ public class Enclosure {
         this.animals = new ArrayList<>();
     }
 
+    public int enclosureSize(){
+        return this.animals.size();
+    }
+
     public void addAnimal(Animal anAnimal){
         this.animals.add(anAnimal);
     }
@@ -28,7 +32,7 @@ public class Enclosure {
     }
 
 //    clear the entire arrayList i.e remove all animals from the  enclosure
-    public void removeAllAnimals(Animal allAnimals){
+    public void removeAllAnimals(){
         this.animals.clear();
     }
 

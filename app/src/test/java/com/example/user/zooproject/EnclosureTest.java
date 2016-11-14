@@ -30,8 +30,21 @@ public class EnclosureTest {
 //        Gorgon gorgon = new Gorgon("Carnivore", "Myth", "Gillian", 10000, false);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.addAnimal(lion);
-        assertEquals( 2, felineEnclosure.getAnimals().size() );
+        assertEquals( 3, felineEnclosure.getAnimals().size() );
     }
+
+    @Test
+    public void testRemoveAllAnimal(){
+        Tiger tiger = new Tiger("", "", "Tony", 10, true);
+        felineEnclosure.addAnimal(tiger);
+        felineEnclosure.removeAllAnimals();
+        assertEquals(felineEnclosure.size(), 0);
+
+
+    }
+
+
+
 
     @Test
     public void testBirdEnclosureSize(){
@@ -40,7 +53,6 @@ public class EnclosureTest {
         birdEnclosure.addAnimal(eagle);
         birdEnclosure.addAnimal(owl);
         assertEquals(2, birdEnclosure.getAnimals().size() );
-
     }
 
 
