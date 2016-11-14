@@ -22,13 +22,14 @@ public class Enclosure {
         return this.animals;
     }
 
-//    remove an animal from the arraylist i.e. remove an animal from the enclosure
+//    remove an animal from the arrayList i.e. remove an animal from the enclosure
     public void removeAnimal(Animal anAnimal){
         this.animals.remove(2);
     }
 
-//    clear the entire arraylist i.e remove all animals from the  enclosure
-   
+//    clear the entire arrayList i.e remove all animals from the  enclosure
+    public void removeAllAnimals(Animal allAnimals){
+        this.animals.clear();
     }
 
 }
