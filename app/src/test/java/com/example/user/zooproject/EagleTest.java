@@ -16,7 +16,7 @@ public class EagleTest {
 
     @Before
     public void before(){
-        eagle = new Eagle(BIRD, "", "Evie", 5, true);
+        eagle = new Eagle(BIRD, "", "Evie", 5);
     }
 
     @Test
@@ -40,9 +40,8 @@ public class EagleTest {
     }
 
     @Test
-    public void testingHasEaten(){
-        assertEquals( true, eagle.hasBeenFed() );
-    }
+
+
 
     @Test
     public void testCanFly(){

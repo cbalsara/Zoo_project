@@ -23,10 +23,11 @@ public class ZooTest {
     @Before
     public void before(){
 
+        zoo = new Zoo();
+
         felineEnclosure = new Enclosure(FELINE);
         birdEnclosure = new Enclosure(BIRD);
         mythicalEnclosure = new Enclosure(MYTHICAL);
-        zoo = new Zoo();
     }
 
     @Test

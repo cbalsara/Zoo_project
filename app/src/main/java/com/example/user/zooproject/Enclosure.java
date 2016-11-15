@@ -34,19 +34,18 @@ public class Enclosure {
 
 //    method to remove an animal from the Animal arrayList
     public Animal removeAnimal(){
-        if (enclosureSize() > 0){
+        if (enclosureSize() > 0) {
             Animal theChosenAnimal = animals.remove(0);
             return theChosenAnimal;
-        } else {
-            return null;
         }
-
+            return null;
     }
 
 //    method to remove all the animals from the animal arrayList
     public void removeAllAnimals(){
         this.animals.clear();
     }
+
 
 }
 
