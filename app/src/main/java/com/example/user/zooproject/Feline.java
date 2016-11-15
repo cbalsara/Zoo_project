@@ -6,8 +6,6 @@ package com.example.user.zooproject;
 
 public abstract class Feline extends Animal {
 
-    private Enum type;
-    private String specie;
 
     public Feline(Enum type, String specie) {
 

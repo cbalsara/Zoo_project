@@ -14,19 +14,32 @@ public class Zoo {
         this.enclosures = enclosures;
     }
 
+//    add enclosures to the zoo()
+
+    public void addEnclosureToZoo(Enclosure[] enclosures){
+        this.enclosures.add
+
+
+    }
+
+//    remove enclosures()
 
 
 
 
 
+//    add animal()
 
 
 
 
 
+//    remove animal()
 
 
 
+
+//    feed animal()
 
 
 

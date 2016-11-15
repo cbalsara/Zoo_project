@@ -6,8 +6,8 @@ package com.example.user.zooproject;
 
 public abstract class Animal {
 
-            private Enum type;
-            private String specie;
+            protected Enum type;
+            protected String specie;
 
 
         public Animal(Enum type, String specie) {

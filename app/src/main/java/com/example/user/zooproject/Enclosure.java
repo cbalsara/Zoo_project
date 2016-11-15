@@ -37,8 +37,10 @@ public class Enclosure {
         if (enclosureSize() > 0){
             Animal theChosenAnimal = animals.remove(0);
             return theChosenAnimal;
+        } else {
+            return null;
         }
-        return null;
+
     }
 
 //    method to remove all the animals from the animal arrayList

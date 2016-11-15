@@ -3,9 +3,6 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
-
-import java.util.ArrayList;
-
 import static com.example.user.zooproject.AnimalType.BIRD;
 import static com.example.user.zooproject.AnimalType.FELINE;
 import static com.example.user.zooproject.AnimalType.MYTHICAL;
