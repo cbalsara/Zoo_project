@@ -1,5 +1,6 @@
 package com.example.user.zooproject;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static com.example.user.zooproject.AnimalType.BIRD;
@@ -23,8 +24,9 @@ public class ZooTest {
     Gorgon gorgon;
     Nasgul nasgul;
 
-    public void before(){
 
+    @Before
+    public void before(){
         felineEnclosure = new Enclosure(FELINE);
         birdEnclosure = new Enclosure(BIRD);
         mythicalEnclosure = new Enclosure(MYTHICAL);
