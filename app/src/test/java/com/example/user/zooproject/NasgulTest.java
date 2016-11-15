@@ -16,7 +16,7 @@ public class NasgulTest {
 
     @Before
     public void before(){
-        nasgul = new Nasgul(MYTHICAL, "", "Bob", 10000, false);
+        nasgul = new Nasgul(MYTHICAL, "", "Bob", 10000);
     }
 
     @Test
@@ -39,10 +39,18 @@ public class NasgulTest {
         assertEquals( 10000, nasgul.hasAge() );
     }
 
-    @Test
-    public void testingHasBeenFed(){
-        assertEquals( false, nasgul.hasBeenFed() );
-    }
+    //    empty stomach starts
+//    @Test
+
+
+//    can eat food
+
+
+//    cant eat once full belly
+
+//    full stomach
+
+//    stomach can be emptied
 
     @Test
     public void testCanScreech(){

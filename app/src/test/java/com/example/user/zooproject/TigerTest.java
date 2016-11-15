@@ -16,7 +16,7 @@ public class TigerTest {
 
     @Before
     public void before(){
-        tiger = new Tiger(FELINE, "", "Tony", 40, false);
+        tiger = new Tiger(FELINE, "", "Tony", 40);
     }
 
     @Test
@@ -39,10 +39,18 @@ public class TigerTest {
         assertEquals( 40, tiger.hasAnAge() );
     }
 
-    @Test
-    public void testingIfBeenFed(){
-        assertEquals( false, tiger.hasBeenFed() );
-    }
+    //    empty stomach starts
+//    @Test
+
+
+//    can eat food
+
+
+//    cant eat once full belly
+
+//    full stomach
+
+//    stomach can be emptied
 
     @Test
     public void testCanPurr(){

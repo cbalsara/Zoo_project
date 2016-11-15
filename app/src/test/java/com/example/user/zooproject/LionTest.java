@@ -17,7 +17,7 @@ public class LionTest {
 
     @Before
     public void before(){
-        lion = new Lion(FELINE, "", "Leo", 20, true);
+        lion = new Lion(FELINE, "", "Leo", 20);
     }
 
 
@@ -42,10 +42,18 @@ public class LionTest {
         assertEquals( 20, lion.hasAge() );
     }
 
-    @Test
-    public void testingIfFed(){
-        assertEquals( true, lion.hasBeenFed() );
-    }
+    //    empty stomach starts
+//    @Test
+
+
+//    can eat food
+
+
+//    cant eat once full belly
+
+//    full stomach
+
+//    stomach can be emptied
 
     @Test
     public void testPurr(){

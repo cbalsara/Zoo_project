@@ -16,7 +16,7 @@ public class OwlTest {
 
     @Before
     public void before(){
-        owl = new Owl(BIRD, "", "Olly", 100, true);
+        owl = new Owl(BIRD, "", "Olly", 100);
     }
 
     @Test
@@ -39,10 +39,18 @@ public class OwlTest {
         assertEquals( 100, owl.hasAge() );
     }
 
-    @Test
-    public void testingIfEaten(){
-        assertEquals( true, owl.hasBeenFed() );
-    }
+    //    empty stomach starts
+//    @Test
+
+
+//    can eat food
+
+
+//    cant eat once full belly
+
+//    full stomach
+
+//    stomach can be emptied
 
     @Test
     public void testCanFly(){

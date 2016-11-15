@@ -16,7 +16,7 @@ public class GorgonTest {
 
     @Before
     public void before(){
-        gorgon = new Gorgon(MYTHICAL, "", "Gillian", 600000, false);
+        gorgon = new Gorgon(MYTHICAL, "", "Gillian", 600000);
     }
 
     @Test
@@ -39,10 +39,18 @@ public class GorgonTest {
         assertEquals( 600000, gorgon.hasAge() );
     }
 
-    @Test
-    public void testingHasBeenFed(){
-        assertEquals( false, gorgon.hasBeenFed() );
-    }
+    //    empty stomach starts
+//    @Test
+
+
+//    can eat food
+
+
+//    cant eat once full belly
+
+//    full stomach
+
+//    stomach can be emptied
 
     @Test
     public void testCanScreech(){

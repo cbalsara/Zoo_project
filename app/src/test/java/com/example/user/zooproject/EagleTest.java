@@ -40,7 +40,7 @@ public class EagleTest {
     }
 
 //    empty stomach starts
-    @Test
+//    @Test
 
 
 //    can eat food

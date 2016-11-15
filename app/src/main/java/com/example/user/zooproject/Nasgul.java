@@ -10,7 +10,7 @@ public class Nasgul extends Mythical implements Screechable {
         private int age;
         private Food[] stomach;
 
-        public Nasgul(Enum type, String specie, String name, int age, boolean fed){
+        public Nasgul(Enum type, String specie, String name, int age){
 
             super(type,specie);
 
