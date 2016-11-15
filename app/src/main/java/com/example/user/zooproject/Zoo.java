@@ -9,19 +9,15 @@ import java.util.ArrayList;
 public class Zoo {
 
     private ArrayList<Enclosure> enclosures;
-    private Animal animals;
 
+    
+    public Zoo(){
+        this.enclosures = new ArrayList<Enclosure>();
 
-    public Zoo(Animal animals){
-        this.enclosures =  new ArrayList<Enclosure>();
-        this.animals = animals;
     }
 
 
-//    Test the zoo is empty
-    public int ZooSize(){
-        return this.enclosures.size();
-    }
+
 
 
 

@@ -27,6 +27,7 @@ public class ZooTest {
 
     @Before
     public void before(){
+
         felineEnclosure = new Enclosure(FELINE);
         birdEnclosure = new Enclosure(BIRD);
         mythicalEnclosure = new Enclosure(MYTHICAL);
@@ -40,6 +41,8 @@ public class ZooTest {
     }
 
     @Test
+    public void (){
+
 
 
 
