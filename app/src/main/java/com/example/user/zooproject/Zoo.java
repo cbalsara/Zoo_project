@@ -19,6 +19,7 @@ public class Zoo {
     }
 
 
+//    getter method to get the enclosures
     public ArrayList<Enclosure> getEnclosures(){
         return this.newEnclosure;
     }
@@ -29,6 +30,14 @@ public class Zoo {
     }
 
 //    remove an enclosure from the zoo()
+    public Enclosure removeEnclosure(){
+        if(zooSize() > 0){
+            Enclosure specificEnclosure = newEnclosure.remove(0);
+            return specificEnclosure;
+        }
+        return null;
+    }
+
 
 
 

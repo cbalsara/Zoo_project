@@ -38,6 +38,11 @@ public class ZooTest {
         assertEquals( 1, zoo.getEnclosures().size() );
     }
 
+    @Test
+    public void testRemoveEnclosure(){
+        
+    }
+
 
 
 
