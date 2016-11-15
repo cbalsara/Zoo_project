@@ -12,11 +12,11 @@ public abstract class Mythical extends Animal {
     public Mythical(Enum type, String specie){
         super(type, specie);
 
-        this.type = animalType.MYTHICAL;
+        this.type = AnimalType.MYTHICAL;
         this.specie = "Legendary";
     }
 
-    public Enum animalType(){
+    public Enum AnimalType(){
         return this.type;
     }
 

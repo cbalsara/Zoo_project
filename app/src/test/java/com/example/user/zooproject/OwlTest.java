@@ -3,7 +3,7 @@ package com.example.user.zooproject;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.example.user.zooproject.animalType.BIRD;
+import static com.example.user.zooproject.AnimalType.BIRD;
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -21,7 +21,7 @@ public class OwlTest {
 
     @Test
     public void testingHasType(){
-        assertEquals( BIRD, owl.animalType() );
+        assertEquals( BIRD, owl.AnimalType() );
     }
 
     @Test

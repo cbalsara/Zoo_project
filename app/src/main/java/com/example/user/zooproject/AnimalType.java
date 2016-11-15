@@ -1,10 +1,11 @@
 package com.example.user.zooproject;
 
 /**
- * Created by user on 14/11/2016.
+ * Created by user on 15/11/2016.
  */
 
-public enum animalType {
+public enum AnimalType {
+
     BIRD,
     FELINE,
     MYTHICAL

@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static com.example.user.zooproject.animalType.BIRD;
-import static com.example.user.zooproject.animalType.FELINE;
-import static com.example.user.zooproject.animalType.MYTHICAL;
+import static com.example.user.zooproject.AnimalType.BIRD;
+import static com.example.user.zooproject.AnimalType.FELINE;
+import static com.example.user.zooproject.AnimalType.MYTHICAL;
 import static junit.framework.Assert.assertEquals;
 
 
@@ -42,9 +42,9 @@ public class EnclosureTest {
 
     @Test
     public void testAddToFelineEnclosure(){
-        Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
-        Lion lion = new Lion(animalType.FELINE, "", "Timmaae", 4, true);
-        Owl owl = new Owl(animalType.BIRD, "", "Woo", 4, true);
+        Tiger tiger = new Tiger(AnimalType.FELINE, "", "Tony", 10, true);
+        Lion lion = new Lion(AnimalType.FELINE, "", "Timmaae", 4, true);
+        Owl owl = new Owl(AnimalType.BIRD, "", "Woo", 4, true);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.addAnimal(lion);
 //        this owl should not pass as the type is incorrect
@@ -54,8 +54,8 @@ public class EnclosureTest {
 
     @Test
     public void testRemoveAnimalFromFelineEnclosure(){
-        Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
-        Lion lion = new Lion(animalType.FELINE, "", "Timmaae", 4, true);
+        Tiger tiger = new Tiger(AnimalType.FELINE, "", "Tony", 10, true);
+        Lion lion = new Lion(AnimalType.FELINE, "", "Timmaae", 4, true);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.addAnimal(lion);
         Animal theChosenAnimal = felineEnclosure.removeAnimal();
@@ -64,7 +64,7 @@ public class EnclosureTest {
 
     @Test
     public void testRemoveAllAnimalsFromFelineEnclosure(){
-        Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
+        Tiger tiger = new Tiger(AnimalType.FELINE, "", "Tony", 10, true);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.removeAllAnimals();
         assertEquals( felineEnclosure.enclosureSize(), 0 );

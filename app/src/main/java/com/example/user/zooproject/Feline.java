@@ -13,14 +13,14 @@ public abstract class Feline extends Animal {
 
         super(type, specie);
 
-        this.type = animalType.FELINE;
+        this.type = AnimalType.FELINE;
         this.specie = "Cat";
     }
 
 //    add in here a method that sets the type to "Carnivore" and the Specie to "Cat" for
 //    all subclasses that inherit from this
 
-    public Enum animalType(){
+    public Enum AnimalType(){
         return this.type;
     }
 

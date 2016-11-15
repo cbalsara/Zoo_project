@@ -12,11 +12,11 @@ public abstract class Bird extends Animal {
     public Bird(Enum type, String specie){
         super(type, specie);
 
-        this.type = animalType.BIRD;
+        this.type = AnimalType.BIRD;
         this.specie = "Shag";
     }
 
-    public Enum animalType(){
+    public Enum AnimalType(){
         return this.type;
     }
 

@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class Enclosure {
 
     private ArrayList<Animal> animals;
-    private Enum animalType;
+    private Enum AnimalType;
 
-    public Enclosure(Enum animalType){
+    public Enclosure(Enum AnimalType){
         this.animals = new ArrayList<Animal>();
-        this.animalType = animalType;
+        this.AnimalType = AnimalType;
     }
 
     public int enclosureSize(){
@@ -22,7 +22,7 @@ public class Enclosure {
 //      method to add an animal to the animal arrayList if the enum matches correctly
     public void addAnimal(Animal anAnimal) {
         //check if anAnimal is == this.animalType
-        if (anAnimal.getType() == this.animalType) {
+        if (anAnimal.getType() == this.AnimalType) {
             this.animals.add(anAnimal);
         }
     }
