@@ -19,7 +19,7 @@ public class ZooTest {
     Enclosure felineEnclosure;
 //    Enclosure birdEnclosure;
 //    Enclosure mythicalEnclosure;
-    
+
     @Before
     public void before(){
 
@@ -31,12 +31,12 @@ public class ZooTest {
     public void testZooEmpty(){
         assertEquals( 0, zoo.zooSize() );
     }
-//
-//    @Test
-//    public void testAddEnclosure (){
-//        zoo.addEnclosure;
-//        assertEquals( 1, zoo.getEnclosures().size() );
-//    }
+
+    @Test
+    public void testAddEnclosure (){
+        zoo.addEnclosure(felineEnclosure);
+        assertEquals( 1, zoo.getEnclosures().size() );
+    }
 
 
 
