@@ -19,7 +19,7 @@ public class Enclosure {
     public int enclosureSize(){
         return this.animals.size();
     }
-//      method to add an animal to the animal arrayList
+//      method to add an animal to the animal arrayList if the enum matches correctly
     public void addAnimal(Animal anAnimal) {
         //check if anAnimal is == this.animalType
         if (anAnimal.getType() == this.animalType) {
@@ -32,7 +32,7 @@ public class Enclosure {
         return this.animals;
     }
 
-//    method to remove an animal from the animal arrayList
+//    method to remove an animal from the Animal arrayList
     public Animal removeAnimal(){
         if (enclosureSize() > 0){
             Animal theChosenAnimal = animals.remove(0);

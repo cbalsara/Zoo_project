@@ -25,13 +25,13 @@ public class EnclosureTest {
 
     @Before
     public void before(){
-        ArrayList<Feline> f =  new ArrayList<Feline>();
+//        ArrayList<Feline> f =  new ArrayList<Feline>();
         felineEnclosure = new Enclosure(FELINE);
 
-        ArrayList<Bird> b = new ArrayList<Bird>();
+//        ArrayList<Bird> b = new ArrayList<Bird>();
         birdEnclosure = new Enclosure(BIRD);
 
-        ArrayList<Mythical> m = new ArrayList<Mythical>();
+//        ArrayList<Mythical> m = new ArrayList<Mythical>();
         mythicalEnclosure = new Enclosure(MYTHICAL);
     }
 
@@ -47,13 +47,13 @@ public class EnclosureTest {
         Owl owl = new Owl(animalType.BIRD, "", "Woo", 4, true);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.addAnimal(lion);
+//        this owl should not pass as the type is incorrect
         felineEnclosure.addAnimal(owl);
         assertEquals( 2, felineEnclosure.getAnimals().size() );
     }
 
-
     @Test
-    public void testRemoveAnimal(){
+    public void testRemoveAnimalFromFelineEnclosure(){
         Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
         Lion lion = new Lion(animalType.FELINE, "", "Timmaae", 4, true);
         felineEnclosure.addAnimal(tiger);
@@ -63,7 +63,7 @@ public class EnclosureTest {
     }
 
     @Test
-    public void testRemoveAllAnimals(){
+    public void testRemoveAllAnimalsFromFelineEnclosure(){
         Tiger tiger = new Tiger(animalType.FELINE, "", "Tony", 10, true);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.removeAllAnimals();
