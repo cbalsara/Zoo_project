@@ -55,7 +55,7 @@ public class EnclosureTest {
         Lion lion = new Lion(AnimalType.FELINE, "", "Timmaae", 4, true);
         felineEnclosure.addAnimal(tiger);
         felineEnclosure.addAnimal(lion);
-        Animal theChosenAnimal = felineEnclosure.removeAnimal();
+        felineEnclosure.removeAnimal();
         assertEquals( felineEnclosure.enclosureSize(), 1 );
     }
 
