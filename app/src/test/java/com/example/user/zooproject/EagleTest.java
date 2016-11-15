@@ -39,7 +39,18 @@ public class EagleTest {
         assertEquals( 5, eagle.hasAge() );
     }
 
+//    empty stomach starts
     @Test
+
+
+//    can eat food
+
+
+//    cant eat once full belly
+
+//    full stomach
+
+//    stomach can be emptied
 
 
 

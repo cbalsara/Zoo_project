@@ -27,6 +27,8 @@ public class Eagle extends Bird implements Flyable {
         return this.age;
     }
 
+
+//check to see how much food consumed
     public int foodEaten(){
            int counter = 0;
         for(int Food = 0; Food < stomach.length; Food++){
@@ -34,7 +36,7 @@ public class Eagle extends Bird implements Flyable {
         }
         return counter;
     }
-
+//actually feed the animal
     public void FeedAnimal(Food food){
         if( stomachFull() ){
             return;
@@ -43,10 +45,12 @@ public class Eagle extends Bird implements Flyable {
         stomach[fillFood] = food;
     }
 
+//    Make sure that the animal can not eat excess food
     public boolean stomachFull(){
         return foodEaten() == stomach.length;
     }
 
+//    make sure that the animals stomach can be emptied
     public void goToToilet(){
         for (int food = 0; food < stomach.length; food++){
             stomach[food] = null;
