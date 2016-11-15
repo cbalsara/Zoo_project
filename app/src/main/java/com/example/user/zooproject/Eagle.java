@@ -29,10 +29,28 @@ public class Eagle extends Bird implements Flyable {
 
     public int foodEaten(){
            int counter = 0;
-        for(int f = 0; f < stomach.length; f++){
-            if (stomach[f] != null) counter++;
+        for(int Food = 0; Food < stomach.length; Food++){
+            if (stomach[Food] != null) counter++;
         }
         return counter;
+    }
+
+    public void FeedAnimal(Food food){
+        if( stomachFull() ){
+            return;
+        }
+        int fillFood = foodEaten();
+        stomach[fillFood] = food;
+    }
+
+    public boolean stomachFull(){
+        return foodEaten() == stomach.length;
+    }
+
+    public void goToToilet(){
+        for (int food = 0; food < stomach.length; food++){
+            stomach[food] = null;
+        }
     }
 
     public String fly(){
