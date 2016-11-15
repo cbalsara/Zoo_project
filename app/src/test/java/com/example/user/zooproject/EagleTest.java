@@ -26,7 +26,7 @@ public class EagleTest {
 
     @Test
     public void testingAnimalType(){
-        assertEquals(BIRD, eagle.AnimalType() );
+        assertEquals(BIRD, eagle.getType() );
     }
 
     @Test

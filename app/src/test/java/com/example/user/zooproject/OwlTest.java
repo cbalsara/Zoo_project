@@ -21,7 +21,7 @@ public class OwlTest {
 
     @Test
     public void testingHasType(){
-        assertEquals( BIRD, owl.AnimalType() );
+        assertEquals( BIRD, owl.getType() );
     }
 
     @Test

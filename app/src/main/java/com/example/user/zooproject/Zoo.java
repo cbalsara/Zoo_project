@@ -8,39 +8,31 @@ import java.util.ArrayList;
 
 public class Zoo {
 
-    private ArrayList<Enclosure> enclosures;
+    private ArrayList<Enclosure> newEnclosure;
 
-    
     public Zoo(){
-        this.enclosures = new ArrayList<Enclosure>();
+        this.newEnclosure = new ArrayList<Enclosure>();
+    }
 
+    public int zooSize(){
+        return this.newEnclosure.size();
     }
 
 
+    public ArrayList<Enclosure> getEnclosures(){
+        return this.newEnclosure;
+    }
 
+//        add enclosure to the zoo()
+    public void addEnclosure(Enclosure anEnclosure){
+        this.newEnclosure.add(anEnclosure);
+    }
 
-
-
-
-
-
-//    add enclosures to the zoo()
-
-//    public void addEnclosure(Enclosure[] enclosures){
-//        this.enclosures.add
-//
-//
-//    }
-
-//    remove enclosures()
-
-
+//    remove an enclosure from the zoo()
 
 
 
 //    add animal()
-
-
 
 
 
