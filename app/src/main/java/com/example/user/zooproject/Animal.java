@@ -6,20 +6,20 @@ package com.example.user.zooproject;
 
 public abstract class Animal {
 
-            protected Enum type;
-            protected String specie;
+    protected Enum type;
+    protected String specie;
 
 
-        public Animal(Enum type, String specie) {
-            this.type = type;
-            this.specie = specie;
-        }
+    public Animal(Enum type, String specie) {
+        this.type = type;
+        this.specie = specie;
+    }
 
-        public Enum getType(){
-            return this.type;
-        }
+    public Enum getType(){
+        return this.type;
+    }
 
-        public String getSpecie(){
+    public String getSpecie(){
             return this.specie;
         }
 

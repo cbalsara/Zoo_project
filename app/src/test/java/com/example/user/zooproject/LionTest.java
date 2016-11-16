@@ -14,10 +14,12 @@ public class LionTest {
 
 
     Lion lion;
+    Food food;
 
     @Before
     public void before(){
         lion = new Lion(FELINE, "", "Leo", 20);
+        food = new Food();
     }
 
 
@@ -43,7 +45,10 @@ public class LionTest {
     }
 
     //    empty stomach starts
-//    @Test
+    @Test
+    public void stomachIsEmpty(){
+        assertEquals(0, lion.foodEaten());
+    }
 
 
 //    can eat food
