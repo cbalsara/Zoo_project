@@ -55,6 +55,13 @@ public class NasgulTest {
         assertEquals( 1, nasgul.foodEaten() );
     }
 
+    @Test
+    public void testCanEmptyStomach() {
+        nasgul.eat(child);
+        nasgul.eat(adult);
+        nasgul.digestFully();
+        assertEquals(0, nasgul.foodEaten());
+    }
 
 
 
