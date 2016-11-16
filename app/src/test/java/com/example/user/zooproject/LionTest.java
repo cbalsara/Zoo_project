@@ -78,6 +78,12 @@ public class LionTest {
 
 
 //    stomach can be emptied
+    @Test
+    public void canGoToToilet(){
+        lion.feedAnimal(food);
+        lion.goToToilet();
+        assertEquals( 0, lion.foodEaten() );
+    }
 
     @Test
     public void testPurr(){
