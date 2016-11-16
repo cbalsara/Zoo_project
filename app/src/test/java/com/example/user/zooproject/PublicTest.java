@@ -40,7 +40,6 @@ public class PublicTest {
         assertEquals(500, newPractiseObject.getTheNumber() );
     }
 
-
 }
 
 

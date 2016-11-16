@@ -8,7 +8,7 @@ public class Practise {
 
 // we are actually creating variables below here which will belong to the practise class.
 // Inside the class 'practise' will be a set space for a string of 'words' object,
-// an integar of 'numbers' object' and a boolean of 'statement' object
+// an integar of 'numbers' object and a boolean of 'statement' object
 //    we are declaring the variables here
     public String words;
     public int numbers;

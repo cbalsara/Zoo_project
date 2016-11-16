@@ -52,7 +52,9 @@ public class TigerTest {
     @Test
     public void canEatFood(){
         tiger.feedAnimal(food);
-        assertEquals(1, tiger.foodEaten() );
+        tiger.feedAnimal(food);
+//        this tells us that there is 1 thing in the array stomach
+        assertEquals(2, tiger.foodEaten() );
     }
 
     //        full stomach

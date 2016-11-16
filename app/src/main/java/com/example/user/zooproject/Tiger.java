@@ -31,18 +31,20 @@ public class Tiger extends Feline implements Purrable {
     //check to see how much food consumed
     public int foodEaten(){
         int counter = 0;
-        for(int Food = 0; Food < stomach.length; Food++){
-            if (stomach[Food] != null) counter++;
+//        this will create 20 "null" spaces in our array food
+        for(int food = 0; food < stomach.length; food++){
+//            this will populate the "null space" by one + the number from previous time, each time
+            if (stomach[food] != null) counter += 1;
         }
         return counter;
     }
     //actually feed the animal
-    public void feedAnimal(Food food){
+    public void feedAnimal(Food someFood){
         if( stomachFull() ){
             return;
         }
         int fillFood = foodEaten();
-        stomach[fillFood] = food;
+        stomach[fillFood] = someFood;
     }
 
     //    Make sure that the animal can not eat excess food
