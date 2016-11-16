@@ -59,6 +59,7 @@ public class NasgulTest {
     public void testCanEmptyStomach() {
         nasgul.eat(child);
         nasgul.eat(adult);
+        nasgul.eat(adult);
         nasgul.digestFully();
         assertEquals(0, nasgul.foodEaten());
     }

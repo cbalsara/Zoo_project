@@ -9,6 +9,7 @@ public class Practise {
 // we are actually creating variables below here which will belong to the practise class.
 // Inside the class 'practise' will be a set space for a string of 'words' object,
 // an integar of 'numbers' object' and a boolean of 'statement' object
+//    we are declaring the variables here
     public String words;
     public int numbers;
     public boolean statement;
@@ -30,6 +31,14 @@ public class Practise {
 //setter to now set .word to whatever we choose to.
     public void setTheWords(String newWordsToSet){
         this.words = newWordsToSet;
+    }
+
+    public int getTheNumber(){
+        return this.numbers;
+    }
+
+    public void setTheNumber(int newNumberToSet){
+        this.numbers = newNumberToSet;
     }
 
 

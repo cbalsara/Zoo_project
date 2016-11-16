@@ -13,10 +13,12 @@ import static junit.framework.Assert.assertEquals;
 public class TigerTest {
 
     Tiger tiger;
+    Food food;
 
     @Before
     public void before(){
         tiger = new Tiger(FELINE, "", "Tony", 40);
+        food = new Food();
     }
 
     @Test
@@ -39,18 +41,47 @@ public class TigerTest {
         assertEquals( 40, tiger.hasAnAge() );
     }
 
+
     //    empty stomach starts
-//    @Test
+    @Test
+    public void stomachIsEmpty(){
+        assertEquals(0, tiger.foodEaten());
+    }
+
+    //    can eat food
+    @Test
+    public void canEatFood(){
+        tiger.feedAnimal(food);
+        assertEquals(1, tiger.foodEaten() );
+    }
+
+    //        full stomach
+    @Test
+    public void stomachIsFull(){
+        for (int f = 0; f < 20; f++){
+            tiger.feedAnimal(food);
+        }
+        assertEquals(tiger.stomachFull(), true);
+    }
 
 
-//    can eat food
+    //    cant eat once full belly
+    @Test
+    public void cantEatWhenFull() {
+        for (int f = 0; f < 30; f++) {
+            tiger.feedAnimal(food);
+        }
+        assertEquals( tiger.foodEaten(), 20);
+    }
 
 
-//    cant eat once full belly
-
-//    full stomach
-
-//    stomach can be emptied
+    //    stomach can be emptied
+    @Test
+    public void canGoToToilet(){
+        tiger.feedAnimal(food);
+        tiger.goToToilet();
+        assertEquals( 0, tiger.foodEaten() );
+    }
 
     @Test
     public void testCanPurr(){

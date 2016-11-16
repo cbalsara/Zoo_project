@@ -70,7 +70,7 @@ public class LionTest {
 //    cant eat once full belly
     @Test
     public void cantEatWhenFull() {
-        for (int f = 0; f < 45; f++) {
+        for (int f = 0; f < 30; f++) {
             lion.feedAnimal(food);
         }
         assertEquals( lion.foodEaten(), 25);
