@@ -57,11 +57,25 @@ public class LionTest {
         assertEquals(1, lion.foodEaten() );
     }
 
+//        full stomach
+    @Test
+    public void stomachIsFull(){
+        for (int f = 0; f < 25; f++){
+            lion.feedAnimal(food);
+        }
+        assertEquals(lion.stomachFull(), true);
+    }
 
 
 //    cant eat once full belly
+    @Test
+    public void cantEatWhenFull() {
+        for (int f = 0; f < 45; f++) {
+            lion.feedAnimal(food);
+        }
+        assertEquals( lion.foodEaten(), 25);
+    }
 
-//    full stomach
 
 //    stomach can be emptied
 
