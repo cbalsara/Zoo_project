@@ -38,20 +38,4 @@ public class Zoo {
         return null;
     }
 
-
-
-//    add animal()
-
-
-
-//    remove animal()
-
-
-
-
-//    feed animal()
-
-
-
-
 }
