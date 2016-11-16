@@ -39,18 +39,6 @@ public class NasgulTest {
         assertEquals( 10000, nasgul.hasAge() );
     }
 
-    //    empty stomach starts
-//    @Test
-
-
-//    can eat food
-
-
-//    cant eat once full belly
-
-//    full stomach
-
-//    stomach can be emptied
 
     @Test
     public void testCanScreech(){

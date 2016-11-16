@@ -29,15 +29,12 @@ public class Lion extends Feline implements Purrable {
     }
 
     //check to see how much food consumed
-    public int foodEaten() {
-        int foodEatenCount = 0;
-
-        for (Food eatenFood : stomach) {
-            if (eatenFood != null) {
-                foodEatenCount++;
-            }
+    public int foodEaten(){
+        int counter = 0;
+        for(int food = 0; food < stomach.length; food++){
+            if (stomach[food] != null) counter++;
         }
-        return foodEatenCount;
+        return counter;
     }
                                     //    25
 //        for (int index = 0; index < stomach.length; index++) {
