@@ -63,6 +63,11 @@ public class NasgulTest {
         assertEquals(0, nasgul.foodEaten());
     }
 
+    @Test
+    public void testAdultExceptsImpendingDoom(){
+        assertEquals( "Welp, im dead!", adult.cry() );
+    }
+
 
 
 }
