@@ -37,7 +37,7 @@ public class Lion extends Feline implements Purrable {
         return counter;
     }
     //actually feed the animal
-    public void FeedAnimal(Food food){
+    public void feedAnimal(Food food){
         if( stomachFull() ){
             return;
         }

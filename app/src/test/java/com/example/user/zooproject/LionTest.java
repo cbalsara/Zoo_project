@@ -50,8 +50,13 @@ public class LionTest {
         assertEquals(0, lion.foodEaten());
     }
 
+    //    can eat food
+    @Test
+    public void canEatFood(){
+        lion.feedAnimal(food);
+        assertEquals(1, lion.foodEaten() );
+    }
 
-//    can eat food
 
 
 //    cant eat once full belly
