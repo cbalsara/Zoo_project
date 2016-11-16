@@ -31,12 +31,16 @@ public class Nasgul extends Mythical implements Screechable {
         }
 
     //check to see how much food consumed
-    
+
         public int foodEaten() {
             return this.stomach.size();
         }
 
+//    create an eat method
+        public void eat(Edible foodType){
+            this.stomach.add(foodType);
 
+        }
 
 
         public String screech(){
