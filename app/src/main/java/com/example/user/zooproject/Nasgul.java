@@ -39,8 +39,11 @@ public class Nasgul extends Mythical implements Screechable {
 //    create an eat method
         public void eat(Edible foodType){
             this.stomach.add(foodType);
-
         }
+
+    public void digest(){
+        this.stomach.clear();
+    }
 
 
         public String screech(){
