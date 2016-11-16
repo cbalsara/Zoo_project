@@ -68,6 +68,10 @@ public class NasgulTest {
         assertEquals( "Welp, im dead!", adult.cry() );
     }
 
+    @Test
+    public void testChildLosesIt(){
+        assertEquals("efinugrihodfvnj", child.cry() );
+    }
 
 
 }
